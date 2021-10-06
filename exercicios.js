@@ -1,16 +1,28 @@
 //exercicio 1
+console.log("")
+console.log("Exercicio 1")
+
 let cliente1= "Afonso"
 let cliente2= "Claudio"
 let cliente3= "João"
+console.log(cliente1)
+console.log(cliente2)
+console.log(cliente3)
 
 //exercicio 2
-let comida1= "pizza"
-let comida2= "hamburguer"
+console.log("")
+console.log("Exercicio 2")
+
+let comida1= "Pizza"
+let comida2= "Hamburguer"
 let comida3= "Bolo" 
+console.log(comida1)
+console.log(comida2)
+console.log(comida3)
 
 //exercicio 3
-console.log("Exercicio 3")
 console.log("")
+console.log("Exercicio 3")
 let nome= "Afonso"
 let sobrenome= "dos Santos" 
 let nome2= "Claudio"
@@ -44,6 +56,8 @@ let variaveis = {
 console.log(variaveis)
 
 //exercicio 5
+console.log("")
+console.log("Exercicio 5")
 
 let s = 1
 let t = 2
@@ -54,13 +68,30 @@ let x = 6
 let y = 7
 let z = 8
 
-//exercicio 6
+console.log("Variável 1:",s)
+console.log("Variável 2:",t)
+console.log("Variável 3:",u)
+console.log("Variável 4:",v)
+console.log("Variável 5:",w)
+console.log("Variável 6:",x)
+console.log("Variável 7:",y)
+console.log("Variável 8:",z)
 
-const pi= 3.14
+//exercicio 6
+console.log("")
+console.log("Exercicio 6")
+
+const pi= Math.PI
 const i = -1
 const e = 2.71
 const square2 = 1.41
 const square3 = 1.73
+
+console.log("Constante 1:","Pi:",pi)
+console.log("Constante 2:","Número imaginário ao quadrado:", i)
+console.log("Constante 3:","Euler:",e)
+console.log("Constante 4:","Raiz quadrada de 2:", square2)
+console.log("Constante 5:","Raiz quadrada de 3:", square3)
 
 //exercicio 7
 console.log("")
@@ -132,11 +163,11 @@ console.log("Resto:", dividendo%divisor)//usei os dados do exercicio 8
 console.log("")
 console.log("Exercicio 11")
 
-let numeroUsuario = 102
+let numeroUsuario = (Math.random()*100).toFixed(0)
 console.log("Se o número do Usuário for:",numeroUsuario)
 
-let porcentagemNU5= (numeroUsuario*5/100).toFixed(1)
-console.log("5% desse número será:", porcentagemNU5)
+let porcentagemNU5= (numeroUsuario*0.05).toFixed(1)
+console.log("5% desse número será aproximadamente:", porcentagemNU5)
 
 //exercicio 12
 console.log("")
