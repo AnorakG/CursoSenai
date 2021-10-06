@@ -1,0 +1,13 @@
+* {
+    background-color: black;
+}
+
+#base{
+    color: white;
+    border-color:red;
+}
+#expoente{
+ color: white;
+ border-color: blue;
+}
+
