@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratificação</title>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Salário</h1>
+    <label for="salario">Insira aqui seu salario:</label><br>
+    <input type="number" id="salario" placeholder="Salário"><br>
+
+    <label for="A">Insira aqui a quantidade vendida do Produto A:</label><br>
+    <input type="number" id="A" placeholder="Produto A"><br>
+
+    <label for="B">Insira aqui a quantidade vendida do Produto B:</label><br>
+    <input type="number" id="B" placeholder="Produto B"><br>
+
+    <button onclick="salario()">Resultado</button><br>
+
+    <label for="resultado1">Salário:</label><br>
+    <input type="text" id="resultado1" readonly><br>
+    
+    <label for="resultado2">Faltou:</label><br>
+    <input type="text" id="resultado2" readonly>
+    <script src="script.js"></script>
+</body>
+</html>
