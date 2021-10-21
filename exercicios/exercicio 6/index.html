@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Salário</header>
+
+    <div class="container">
+    <label for="hora">Insira aqui o valor da sua hora:</label>
+    <input type="number" id="hora" placeholder="Valor">
+
+    <label for="carga">Insira aqui a sua carga horária:</label>
+    <input type="number" id="carga" placeholder="Carga Horária">
+
+    <button onclick="imposto()">Resultado</button><br>
+
+    <label for="resultado1">Salário Líquido:</label>
+    <input type="text" id="resultado1" readonly>
+    
+    <label for="resultado2">Salário Bruto:</label>
+    <input type="text" id="resultado2" readonly>
+    
+    <label for="resultado3">Valor descontado:</label>
+    <input type="text" id="resultado3" readonly>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
