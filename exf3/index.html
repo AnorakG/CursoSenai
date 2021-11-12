@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="som">
+    <audio id="soundtrack"  src="audio/soundtrack.mp3" preload="auto">
+    </audio>
+    </div> 
+    <div id="comecar">
+        <button onclick="comecar()">Começar</button>
+    </div>
+    <div class="perguntas">
+       
+    
+        <div id="pergunta1">
+            <p>Quem é o Rei do Olimpo?</p>
+            <button onclick="comecar('errou')">Ares</button>
+            <button onclick="comecar('errou')">Hefesto</button>
+            <button onclick="comecar('errou')">Hera</button>
+            <button onclick="comecar('zeus')">Zeus</button>
+        </div>
+        <div id="pergunta2">
+            <p>Quem é o deus da caça?</p>
+            <button onclick="comecar('artemis')">Artemis</button>
+            <button onclick="comecar('errou')">Hélios</button>
+            <button onclick="comecar('errou')">Hera</button>
+            <button onclick="comecar('errou')">Atena</button>
+        </div>
+        <div id="pergunta3">
+            <p>Quem é o deus ferreiro?</p>
+            <button onclick="comecar('errou')">Ares</button>
+            <button onclick="comecar('hefesto')">Hefesto</button>
+            <button onclick="comecar('errou')">Nike</button>
+            <button onclick="comecar('errou')">Poseidon</button>
+        </div>
+        <div id="pergunta4">
+            <p>Quem é o deus do sol?</p>
+            <button onclick="comecar('apolo')">Apolo</button>
+            <button onclick="comecar('errou')">Hefesto</button>
+            <button onclick="comecar('errou')">Héstia</button>
+            <button onclick="comecar('errou')">Zeus</button>
+        </div>
+        <div id="pergunta5">
+            <p>Quem é o deus da guerra?</p>
+            <button onclick="comecar('fim')">Ares</button>
+            <button onclick="comecar('errou')">Atena</button>
+            <button onclick="comecar('errou')">Demeter</button>
+            <button onclick="comecar('errou')">Zeus</button>
+        </div>
+        <div id="errou">
+            <p>VOCÊ ERROU</p>
+            <button onclick="comecar('reset')">Recomeçar?</button>
+        </div>
+        <div id= "parabens">
+            <p>Parabéns, você acertou tudo!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
