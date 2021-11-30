@@ -13,6 +13,7 @@ let email = document.getElementById('email')
 let dataNascimento = document.getElementById('dataNascimento')
 
 let idade = 0
+localStorage.setItem("users", JSON.stringify(users))
 
 function cadastramento(){
     formCadastro.style.display = "inline";
@@ -73,5 +74,6 @@ function confirmar(){
         alert("Você está logado")
     }else{
         alert("Cadastre-se por favor")
+        formCadastro.style.display = "inline"; 
     }
 }
