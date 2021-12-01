@@ -103,9 +103,7 @@ function confirmar(){
         contaConectada = usuarios.find(buscarEmail)
         confirmarSenha()
     }else{
-        alert("Cadastre-se por favor")
-        anuncioCadastro.style.display = "none"
-        formCadastro.style.display = "inline";        
+        alert("Cadastre-se por favor")   
     }
 }
 
@@ -114,6 +112,7 @@ function confirmarSenha(){
         alert('Você está logado')
         senhaUsuario.value = ""
         login.value = ""
+        anuncioCadastro.style.display = "none";
     }else{
         alert('Senha ou usuário incorretas \nTente novamente ou cadastre-se por favor')
     }
