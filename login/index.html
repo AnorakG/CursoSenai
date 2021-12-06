@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="formLogin">
+            <div class="textoLogin">
+                <h2>Login</h2>
+            </div>
+                <input class="login" type="text" id="nomeUsuario" placeholder="Insira aqui o nome da sua conta"><br>
+                <input class="login" type="password" id="senhaUsuario" placeholder="Insira aqui sua senha"><br>
+                <input type="checkbox" id="senhaVisivel2">
+                <label for="senhaVisivel2">Visualize sua senha</label><br>
+                <input type="button" class="btn" id="botaoLogin" onclick="confirmar()" value="Login">
+                <input type="button" class="btn" id="botaoRegistro" onclick="cadastramento()" value="Criar conta">
+                <br><br>
+            </form>
+        <form id="formCadastro">
+            <div class="textoCadastro">
+                <h2>Cadastro</h2>
+            </div>
+                <input class="cadastrar" type="text" id="nome" placeholder="Insira aqui o nome desejado">
+                <input class="cadastrar" type="text" id="email" placeholder="Insira aqui o seu e-mail"><br>
+                <input class="cadastrar" type="password" id="senha1" placeholder="Insira aqui sua senha">
+                <input class="cadastrar" type="password" id="senha2" placeholder="Confime sua senha" onchange="validarSenha()"><br>
+                <input type="checkbox" id="senhaVisivel1" onclick="visibilidade1()">
+                <label for="senhaVisivel1">Visualize sua senha</label>
+                <br>
+                <p id="senhaValidez"></p>
+                <input class="cadastrar" type="date" id="dataNascimento" onchange="confirmarIdade()"><br>
+                <input type="button" class="btn" id="botaoCadastro" onclick="cadastrar()" value="Cadastre-se">
+                <input type="button" class="btn" id="botaoRetorno"  onclick="voltar()" value="Volte">
+        </form>
+        <p id="anuncioCadastro"></p>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
