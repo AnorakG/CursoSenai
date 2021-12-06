@@ -103,9 +103,10 @@ function cadastrar(){
         anuncioCadastro.innerHTML = "Parabéns por se cadastrar! <br> Cadastro realizado =)"
         setTimeout(function(){
             anuncioCadastro.innerHTML = '';
+            formCadastro.style.display = "none";
+            formLogin.style.display = "inline"
         }, 700);
-        formCadastro.style.display = "none";
-        formLogin.style.display = "inline"
+        
     }
 }
 
