@@ -6,13 +6,8 @@ function mostravetor(vetor) {
 }
 function intercalado(array1, array2) {
     var resultado = [];
-    var total = 0;
-    if (array1.length > array2.length) {
-      total = array1.length;
-    } else {
-      total = array2.length;
-    }
-  
+    var total = array1.length;
+
     for (var i = 0; i < total; i++) {
       if (array1[i]) {
         resultado.push(array1[i]);
